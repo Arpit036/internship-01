@@ -1,0 +1,7 @@
+## TASK -01 {5}: API INTEGRATION AND FRONTEND INTERACTION
+
+outcome - 
+   1. CRUD API
+   2. FRONTEND SE API CALLS
+   3. DISPLAYING DYNAMIC DATA
+server completed. now will work on frontend.

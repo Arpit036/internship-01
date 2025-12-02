@@ -15,8 +15,12 @@ let items = [
 
 
 app.get('/api/items', (req, res) => {
-    res.json(items);
+  res.json([
+    { id: 1, name: 'Item 1' },
+    { id: 2, name: 'Item 2' }
+  ]);
 });
+
 
 app.post('/api/items', (req, res) => {
     const newItem = {
@@ -30,7 +34,7 @@ app.post('/api/items', (req, res) => {
 app.delete('/api/items/:id', (req, res) => {
     const itemId = parseInt(req.params.id);
     items = items.filter(item => item.id !== itemId);
-    res.status({ message: 'Item deleted' });
+    res.json({ message: 'Item deleted' });
 });
 
 
